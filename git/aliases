@@ -1,0 +1,15 @@
+g() {
+  git checkout $1
+}
+
+gl() {
+  git log --pretty="format:%C(8)%h %C(7)%>(12)%ad %C(cyan)%<(7)%aN%C(yellow)%d %C(8)%s" --date=short
+}
+
+gpo() {
+  git push origin
+}
+
+gb() {
+  git checkout -b $1
+}
